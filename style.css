@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "proxima-soft", "Proxima Soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #1e1e1e;
+}
+
+.atnd{
+    color: rgba(0,122,204,1);
+    background-color: #252526;
+    display: flex;
+    margin-block: 10px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+
+.chat{
+    background-color: #252526;
+    margin-block: 20px;
+    border-radius: 10px;
+    height: 600px;
+    width: 1450px;
+    position: fixed;
+    margin-left: 20px;
+    color: white;
+}
+
+.texto1{
+    background-color: rgba(0,122,204,1);
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    width: 200px;
+    height: fit-content;
+    text-align: left;
+    padding: 2px;
+    margin-left: 20px;
+    top: 5px;
+    left: 3px;
+}
+
+.texto2{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    position: absolute;
+    width: 300px;
+    height: fit-content;
+    text-align: center;
+    padding: 2px;
+    margin-right: 20px;
+    top: 150px;
+    right: 3px;
+}
+
+.texto2:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid white;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    bottom: 0;
+    right: -15px;
+}
+
+.texto1:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid rgba(0,122,204,1);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 0;
+    left: -15px;
+}
+
+.msg-texto1{
+    padding: 0;
+    margin: 0;
+}
+
+.msg-texto2{
+    padding: 0;
+    margin: 0;
+}
+
+.msgtime{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 300;
+    bottom: 5px;
+    right: 5px;
+}
+
+.msgtime2{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 300;
+    bottom: 0px;
+    left: 5px;
+}
+
+.escrever-msg{
+    width: 1350px;
+    border-radius: 10px;
+    height: 50px;
+    bottom: 5px;
+    position: absolute;
+    font-size: 15px;
+    left: 5px;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.botao-enviar{
+    border-radius: 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    height: 50px;
+    background-color: rgba(0,122,204,1);
+    color: white;
+    width: 90px;
+    font-size: 20px;
+    border-color:#252526 ;
+}
